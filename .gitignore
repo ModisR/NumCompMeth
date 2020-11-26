@@ -1,4 +1,2 @@
-# ignore everything but .py files and this one
-*
-!*.py
-!.gitignore
+# IDE config folder
+.idea
