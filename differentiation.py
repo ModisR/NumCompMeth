@@ -3,10 +3,10 @@ import pylab as plt
 mp.dps = 40
 
 def f(x):
-    return x**3 + 2*x
+    return x**6 + x**3 + 2*x
 
 def df(x):
-    return 3*x**2 + 2
+    return 6*x**5 + 3*x**2 + 2
 
 # O(h) precision
 def df1(x, h):
