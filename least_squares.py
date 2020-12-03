@@ -15,7 +15,7 @@ def findas(m, xs_, ys_):
 
 xs = range(1, 7)
 ys = [-5.21659, 2.53152, 2.05687, 14.1135, 20.9673, 33.5652]
-ft = findas(2, xs, ys)
+ft = findas(1, xs, ys)
 
 xdense = np.arange(0, 7, .1)
 ydense = [ft(x) for x in xdense]

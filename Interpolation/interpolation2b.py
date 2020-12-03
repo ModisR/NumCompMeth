@@ -1,4 +1,4 @@
-from interpolation2 import plot, fun
+from Interpolation.interpolation2 import plot
 from numpy import *
 
 

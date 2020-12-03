@@ -1,7 +1,7 @@
 from numpy import *
 from matplotlib import pyplot as plt
 
-h = .2
+h = .5
 def heun(f, x0, y0, x1):
     ys = [y0]
     for x in arange(x0, x1 - h, h):

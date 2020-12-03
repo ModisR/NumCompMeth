@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 from numpy import arange
 
-from Lagrange import lagrange
+from Interpolation.Lagrange import lagrange
 
 
 xs = [1, 2, 3, 4, 5, 6]
