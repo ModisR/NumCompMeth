@@ -1,12 +1,15 @@
 from numpy import *
 from random import uniform
 
-def monte_carlo(f, ymin, ymax, a, b, n):
-    hits = 0
-    for _ in range(n):
-        hits += uniform(ymin, ymax) < f(uniform(a, b))
+def monte_carlo(f, ymin, ymax, a, b, N):
+    n = 0
+    for _ in range(N):
+        n += uniform(ymin, ymax) < f(uniform(a, b))
     area = (ymax - ymin) * (b - a)
-    return area * hits/n
+    p = n / N
+    # error estimate
+    print(area * sqrt(p*(1-p)/N))
+    return p * area
 
 def fun(x):
     return sqrt(4-x*x)
