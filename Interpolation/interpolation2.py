@@ -1,4 +1,4 @@
-from Interpolation.Lagrange import lagrange
+from lib.interpolation import lagrange
 
 from numpy import arange, e
 from matplotlib import pyplot as plt

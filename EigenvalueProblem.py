@@ -1,7 +1,7 @@
 from numpy import *
 
 from lib.root_finding import newton as newton
-from lib.jacobi_eigenvalues import diagonalise
+from lib.eigenvalues import diagonalise
 
 A = array([[1.,-1.,0.], [-1.,4.,-2.], [0.,-2.,2.]])
 def det_l(la):
